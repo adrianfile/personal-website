@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+header {
+    width: 100%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    color:white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.landing-page {
+    background:url(./component/assets/Images/myself.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+.home {
+    color:white;
+}
+
+.garis {
+    width: 300px;
+    height: 3px;
+    background-color:white;
+    margin-left:auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.hi {
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top:290px;
+    font-style: italic;
+}
+
+.my_name {
+    position: relative;
+    font-size: 64px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    border:black;
+}
+
+img {
+    top: 0px;
+}
+
+.link {
+    color:black;
+}
+
+.link:hover {
+    color:darkgoldenrod;
+}
+.border-b-2 {
+   border-bottom-width:1px;
+   border-color:white;
+   transition: border-color .25s ease-out .25s;
+}
+
+.border-b-2:hover{
+    border-color:black;
+}
+
+
+@media only screen and (max-width: 600px){
+    .garis {
+        width:200px;
+        height:2px;
+    }
+    .my_name {
+        font-size:40px;
+    }
+    .hi {
+        font-size: 20px;
+        margin-top:250px;
+    }
+
+    header {
+        display:block;
+        height: 150px;
+    }
+    .navbar {
+        top:100px;
+        position:absolute;
+        color:black;
+        left:10px;
+    }
+
+    img {
+        position: absolute;
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+    }
+    .link {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .link {
+        margin: 0 auto;
+    }
+}
+
+
