@@ -13,10 +13,10 @@ ReactDOM.render(
   <Router>
     <Header />
     <Switch>
-      <Route path="/" component={ Home } />
-      <Route path="/about" component={ About } />
-      <Route path="/project" component={ Project } />
-      <Route path="/journey" component={ Journey } />
+      <Route exact path="/" component={ Home } />
+      <Route exact path="/about" component={ About } />
+      <Route exact path="/project" component={ Project } />
+      <Route exact path="/journey" component={ Journey } />
     </Switch>
   </Router>,
   document.getElementById('root')
