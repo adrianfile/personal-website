@@ -51,7 +51,7 @@ header {
 
 .navbar {
     font-family: 'Poppins', sans-serif;
-    border:black;
+    border:white;
 }
 
 img {
@@ -72,7 +72,7 @@ img {
 }
 
 .border-b-2:hover{
-    border-color:black;
+    border-color:white;
 }
 
 .aboutme {
