@@ -67,7 +67,7 @@ img {
 }
 .border-b-2 {
    border-bottom-width:1px;
-   border-color:white;
+   border-color:#ffffff00;
    transition: border-color .25s ease-out .25s;
 }
 
