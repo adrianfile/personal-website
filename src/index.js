@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { HashRouter as Router, Switch, Route, hashHistory as History } from "react-router-dom" ;
+import { BrowserRouter as Router, Switch, Route, BrowserHistory as History } from "react-router-dom" ;
 import Header from "./component/Header";
 import Home from "./component/assets/Home";
 import About from "./component/assets/About";
