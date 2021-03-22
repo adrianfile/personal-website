@@ -14,9 +14,9 @@ ReactDOM.render(
     <Header />
     <Switch>
       <Route exact path="/" component={ Home } />
-      <Route exact path="/about" component={ About } />
-      <Route exact path="/project" component={ Project } />
-      <Route exact path="/journey" component={ Journey } />
+      <Route path="/about" component={ About } />
+      <Route path="/project" component={ Project } />
+      <Route path="/journey" component={ Journey } />
     </Switch>
   </Router>,
   document.getElementById('root')
