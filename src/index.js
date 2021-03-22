@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Switch, Route, BrowserHistory } from "react-router-dom" ;
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom" ;
 import Header from "./component/Header";
 import Home from "./component/assets/Home";
 import About from "./component/assets/About";
@@ -10,7 +10,7 @@ import Project from "./component/assets/Project";
 import "./index.css";
 
 ReactDOM.render(
-  <Router history={BrowserHistory}>
+  <Router>
     <Header />
     <Switch>
       <Route exact path="/" component={ Home } />
