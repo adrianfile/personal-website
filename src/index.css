@@ -6,12 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 
-.whiteLogo {
-    background-image: url(./WhiteLogo.png);
-}
-.redLogo {
-    background-image: url(./RedLogo.png);  
-}
+
 header {
     width: 100%;
     height: 100px;
@@ -122,10 +117,6 @@ header {
     @keyframes garisan {
         0% {width: 0;}
         100% {width: 200px;}
-    }
-
-     {
-      display: none;  
     }
     .garis {
         width:200px;
