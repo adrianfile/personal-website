@@ -1,4 +1,6 @@
 import React from 'react';
+import About from './About';
+
 
 class Home extends React.Component {
     constructor(props){
@@ -8,23 +10,22 @@ class Home extends React.Component {
 
         }
     }
-
     componentDidMount() {
         document.getElementsByTagName('body')[0].className = 'landing-page';
-    }
-    componentWillUnmount() {
-        document.getElementsByTagName('body')[0].className = '';
     }
 
     render(){
         return (
+            <>
             <div>
-               <div class="home">
+               <div class="home pb-10">
                    <p class="text-center hi">Hello, my name</p>
                    <p class="my_name uppercase">{this.state.nama}</p>
                    <p class="garis"></p>
                </div>
             </div>
+            <About />
+            </>
         );
     }
 };
